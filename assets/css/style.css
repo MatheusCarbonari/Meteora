@@ -1,0 +1,36 @@
+/*IMPORTS*/
+@import url("./header.css");
+@import url("./bannerCarrousel.css");
+@import url("./categorias.css");
+@import url("./produtos.css");
+@import url("./facilidades.css");
+@import url("./cadastro.css");
+@import url("./footer.css");
+@import url("./modal.css");
+
+/*ZERANDO CONFIGURAÇÕES AUTOMÁTICAS*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+}
+
+:root{
+    --paleta-primaria-preto: #000000;
+    --paleta-primaria-cinza: #CCCCCC;
+    --paleta-primaria-amarelo: #DAFF01;
+    --paleta-primaria-roxo: #9353FF;
+    --paleta-complementar-vermelho: #EE6471;
+    --paleta-complementar-laranja: #F87F46;
+
+    --color-branca: #FFFFFF;
+
+    --font-inter: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: var(--font-inter);
+    color: var(--paleta-primaria-preto);
+    font-size: 16px;
+}

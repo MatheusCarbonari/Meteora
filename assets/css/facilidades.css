@@ -1,0 +1,74 @@
+.facilidades-container {
+    background-color: var(--paleta-primaria-preto);
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: auto;
+}
+
+.facilidades-titulo {
+    color: var(--color-branca);
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.facilidades-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin: 1rem 3rem;
+}
+
+.facilidades-cards__itens {
+    width: 350px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.facilidades-cards__imagem {
+    grid-row: 1/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.facilidades-cards__titulo {
+    color: var(--paleta-primaria-amarelo);
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.facilidades-cards__texto {
+    font-size: 0.8rem;
+    color: var(--color-branca);
+    grid-column: 2/3;
+}
+
+@media screen and (max-width:768px) {
+    
+    .facilidades-container {
+        height: auto;
+    }
+
+    .facilidades-cards {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+} @media screen and (max-width:368px) {
+
+    .facilidades-cards__titulo {
+        font-size: .8rem;
+    }
+    
+    .facilidades-cards__texto {
+        font-size: 0.6rem;
+    }
+      
+    .facilidades-cards__itens {
+        align-self: self-end;
+    }
+
+}

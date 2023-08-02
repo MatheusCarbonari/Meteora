@@ -1,0 +1,70 @@
+.cadastro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.cadastro-card {
+    border: 1px solid var(--paleta-primaria-preto);
+    margin-bottom: 2rem;
+    width: 729px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cadastro-texto {
+    text-align: center;
+}
+
+.cadastro-email {
+    width: 540px;
+    text-align: center;
+}
+
+.cadastro-email__input {
+    width: 80%;
+    height: 38px;
+    border: 0.5px solid var(--paleta-primaria-preto);
+    padding-left: 1rem;
+}
+
+.cadastro-email__botao {
+    width: 84px;
+    height: 39px;
+    background-color: var(--paleta-primaria-roxo);
+    color: var(--color-branca);
+}
+
+.mensagem-erro {
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media screen and (max-width:375px) {
+            
+    .cadastro-card {
+        width: 321px;
+        height: 179px;
+    }
+        
+    .cadastro-email {
+        width: 289px;
+    }
+
+    .cadastro-email__input {
+        width: 60%;
+        height: 30px;
+    }
+    
+    .cadastro-email__botao {
+        width: 84px;
+        height: 32px;
+    }
+
+}

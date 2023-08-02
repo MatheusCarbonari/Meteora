@@ -1,0 +1,11 @@
+.footer-container {
+    background-color: var(--paleta-primaria-preto);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-texto {
+    font-size: 0.6rem;
+    color: var(--color-branca);
+    
+}

@@ -1,0 +1,103 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "produto": "Camiseta Conforto",
+            "categoria": "Camisetas",
+            "descricao": "Multicores e tamanhos. Tecido de algodão 100%, fresquinho para o verão.",
+            "preco": 70.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/Camiseta.png",
+            "vendidos": 721
+        },
+        {
+            "id": 2,
+            "produto": "Calça Alfaiataria",
+            "categoria": "Calças",
+            "descricao": "Modelo Wide Leg alfaiataria em linho. Uma peça pra vida toda!",
+            "preco": 180.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/Calça.png",
+            "vendidos": 853
+        },
+        {
+            "id": 3,
+            "produto": "Tênis Chunky",
+            "categoria": "Calçados",
+            "descricao": "Snicker casual com solado mais alto e modelagem robusta. Modelo unissex.",
+            "preco": 250.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/Tenis.png",
+            "vendidos": 978
+        },
+        {
+            "id": 4,
+            "produto": "Jaqueta Jeans",
+            "categoria": "Casacos",
+            "descricao": "Modelo unissex oversized com gola de camurça. Atemporal e autêntica!",
+            "preco": 150.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/Jaqueta.png",
+            "vendidos": 680
+        },
+        {
+            "id": 5,
+            "produto": "Óculos Redondo",
+            "categoria": "Óculos",
+            "descricao": "Armação metálica em grafite com lentes arredondadas. Sem erro!",
+            "preco": 120.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/óculos.png",
+            "vendidos": 700
+        },
+        {
+            "id": 6,
+            "produto": "Bolsa Coringa",
+            "categoria": "Bolsas",
+            "descricao": "Bolsa camel em couro sintético de alta duração. Ideal para acompanhar você por uma vida!",
+            "preco": 120.00,
+            "imagem": "/assets/img/Desktop/Imagens Cards/Bolsa.png",
+            "vendidos": 950
+        },
+        {
+            "id": 7,
+            "produto": "TÊNIS AIR JORDAN 1",
+            "categoria": "Calçados",
+            "descricao": "O Tênis foi atualizado com detalhes exclusivos, mas manteve a mesma sensação de maciez e ajuste leve.",
+            "preco": 899.00,
+            "imagem": "https://mhmcdn.manualdohomemmoderno.com.br/?w=700&h=700&quality=100&clipping=crop&url=https://manualdohomemmoderno.com.br/files/2020/08/nike-air-jordan-1-7-sneakers-semelhantes-e-mais-baratos-nike-air-jordan-1-7-sneakers-semelhantes-e-mais-baratos.jpg",
+            "vendidos": 999
+        },
+        {
+            "id": 8,
+            "produto": "Óculos de Sol",
+            "categoria": "Óculos",
+            "descricao": "Óculos de Sol Feminino Quadrado Preto e Tartaruga Duda",
+            "preco": 141.00,
+            "imagem": "https://cdn.safine.com.br/wp-content/uploads/2023/04/safine_com_br-oculos-de-sol-feminino-quadrado-preto-e-tartaruga-duda-2-770x770.jpg",
+            "vendidos": 798
+        },
+        {
+            "id": 9,
+            "produto": "Óculos de Sol Ibiza",
+            "categoria": "Óculos",
+            "descricao": "Óculos de sol Feminino com detalhes modernos e sofisticados, sucesso na Europa agora disponível para você.",
+            "preco": 129.00,
+            "imagem": "https://cdn.awsli.com.br/411/411095/produto/55408710/8a467dd823.jpg",
+            "vendidos": 825
+        },
+        {
+            "id": 10,
+            "produto": "Bolsa de Praia Azul Quadrada",
+            "categoria": "Bolsas",
+            "descricao": "Super confortável, estilosa e perfeita para compor looks leves de verão. Lavável, prática e linda para usar dentro e fora da praia ou piscina",
+            "preco": 189.00,
+            "imagem": "https://cdn.awsli.com.br/600x450/200/200271/produto/35220235/a3a69d9363.jpg",
+            "vendidos": 814
+        },
+        {
+            "id": 11,
+            "produto": "Jaqueta de Couro Chocolate",
+            "categoria": "Casacos",
+            "descricao": "Jaqueta feita em couro de boi legítimo. Modelo corte slim com design gola alta botões com ajuste no punho",
+            "preco": 1799.00,
+            "imagem": "https://img.irroba.com.br/fit-in/572x800/filters:format(webp):fill(fff):quality(80)/elitiaue/catalog/012/elitecourodscf1476.jpg",
+            "vendidos": 900
+        }
+    ]
+}

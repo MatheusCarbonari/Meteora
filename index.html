@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteora</title>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--ESTILO CSS-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!--FAVICON-->
+    <link rel="icon" type="image/x-icon" href="./assets/img/Favicon-48x.png" />
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/8458707536.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <!--Cabeçalho-->
+        <nav class="cabecalho">
+
+            <!--Logo-->
+            <div class="cabecalho-logo">
+                <a href="">
+                    <img src="./assets/img/Logo desktop.png" alt="Logo Meteora">
+                </a>
+            </div>
+            <!--/Logo-->
+
+            <!--Menu lista-->
+            <ul class="cabecalho-lista">
+                <li class="cabecalho-lista__item">
+                    <a href="/index.html" class="cabecalho-lista__link">Home</a>
+                </li>
+                <li class="cabecalho-lista__item">
+                    <a href="#" class="cabecalho-lista__link">Nossas lojas</a>
+                </li>
+                <li class="cabecalho-lista__item">
+                    <a href="#" class="cabecalho-lista__link">Novidades</a>
+                </li>
+                <li class="cabecalho-lista__item">
+                    <a href="#" class="cabecalho-lista__link">Promoções</a>
+                </li>
+            </ul>
+            <!--/Menu lista-->
+
+            <!--Input de pesquisa-->
+            <div class="cabecalho-pesquisa">
+                <input class="cabecalho-pesquisa__input" type="search" placeholder="Digite o produto" data-pesquisa>
+                <input class="cabecalho-pesquisa__botao" type="submit" value="Buscar" data-pesquisa-botao>
+            </div>
+            <!--Input de pesquisa-->
+
+            <!--Menu Hamburguer-->
+            <div class="menu-hamburguer">
+                <button class="menu__button"><i class="fa-solid fa-bars icon"></i></button>
+                <div id="mh" class="menu-desativado">
+                    <ul class="lista-hamburguer">
+                        <li class="lista-hamburguer__item">
+                            <a class="lista-hamburguer__link" href="#">Home</a>
+                        </li>
+                        <li class="lista-hamburguer__item">
+                            <a class="lista-hamburguer__link" href="#">Nossas lojas</a>
+                        </li>
+                        <li class="lista-hamburguer__item">
+                            <a class="lista-hamburguer__link" href="#">Novidades</a>
+                        </li>
+                        <li class="lista-hamburguer__item">
+                            <a class="lista-hamburguer__link" href="#">Promoções</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--/Menu Hamburguer-->
+
+        </nav>
+        <!--/Cabeçalho-->
+
+    </header>
+    <!--/Header-->
+
+    <!--Banner-Carrousel-->
+    <section class="carrousel-container" data-carrousel>
+
+        <!-- Slider container -->
+        <div class="slider-container" id="carrousel">
+            <div class="slider-list">
+                <div class="slider-list__item">
+                    <img class="slider-list__img" src="./assets/img/Desktop/Banner carousel 1 _ 1440 (1).png" alt="">
+                </div>
+                <div class="slider-list__item">
+                    <img class="slider-list__img" src="./assets/img/Desktop/Banner carousel 2 _ 1440 (1).png" alt="">
+                </div>
+                <div class="slider-list__item">
+                    <img class="slider-list__img" src="./assets/img/Desktop/Banner carousel 3 _ 1440 (1).png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!--Botoes next e prev-->
+        <button class="carrousel-prev"><i class="fa-regular fa-hand-point-left"></i></button>
+        <button class="carrousel-next"><i class="fa-regular fa-hand-point-right"></i></button>
+
+    </section>
+    <!--/Banner-Carrousel-->
+
+    <!--Categorias-->
+    <section class="categorias-container">
+
+        <h2 class="categorias-titulo">Busque por categoria:</h2>
+
+        <div class="categorias-categoria">
+
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria camiseta.png" alt="categoria Camiseta">
+                <p class="categorias__cards__texto">Camisetas</p>
+            </div>
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria Bolsa.png" alt="categoria Bolsas">
+                <p class="categorias__cards__texto">Bolsas</p>
+            </div>
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria calça.png" alt="categoria Calças">
+                <p class="categorias__cards__texto">Calças</p>
+            </div>
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria Calçados.png" alt="categoria Calçados">
+                <p class="categorias__cards__texto">Calçados</p>
+            </div>
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria casacos.png" alt="categoria Casacos">
+                <p class="categorias__cards__texto">Casacos</p>
+            </div>
+            <div class="categorias__cards">
+                <img src="./assets/img/Desktop/Categorias/Categoria óculos.png" alt="categoria Óculos">
+                <p class="categorias__cards__texto">Óculos</p>
+            </div>
+
+        </div>
+
+    </section>
+    <!--/Categorias-->
+
+    <!--Seção Produtos-->
+    <h2 class="produtos__titulo">Produtos que estão bombando!</h2>
+    <section class="produtos-container" data-produtos></section>
+
+    <!--Seção Facilidades-->
+    <section class="facilidades-container">
+        <h2 class="facilidades-titulo">Conheça todas as nossas facilidades</h2>
+        <div class="facilidades-cards">
+            <div class="facilidades-cards__itens">
+                <img class="facilidades-cards__imagem" src="./assets/img/Desktop/Ícones/x-diamond (2).png" alt="">
+                <h3 class="facilidades-cards__titulo">PAGUE PELO PIX</h3>
+                <p class="facilidades-cards__texto">Ganhe 5% OFF em pagamentos via PIX</p>
+            </div>
+            <div class="facilidades-cards__itens">
+                <img class="facilidades-cards__imagem" src="./assets/img/Desktop/Ícones/arrow-repeat (2).png" alt="">
+                <h3 class="facilidades-cards__titulo">TROCA GRÁTIS</h3>
+                <p class="facilidades-cards__texto">Fique livre para trocar em até 30 dias.</p>
+            </div>
+            <div class="facilidades-cards__itens">
+                <img class="facilidades-cards__imagem" src="./assets/img/Desktop/Ícones/flower1 (3).png" alt="">
+                <h3 class="facilidades-cards__titulo">SUSTENTABILIDADE</h3>
+                <p class="facilidades-cards__texto">Moda responsável, que respeita o meio ambiente.</p>
+            </div>
+        </div>
+    </section>
+    <!--/Seção Facilidades-->
+
+    <!--Cadastre-se!-->
+    <section class="cadastro-container">
+        <form>
+            <div class="cadastro-card">
+                <p class="cadastro-texto">Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra?
+                    Cadastre-se!</p>
+                <div class="cadastro-email">
+                    <input class="cadastro-email__input" type="email" name="email" placeholder="Digite aqui seu email">
+                    <button class="cadastro-email__botao" type="submit">Enviar</button>
+                </div>
+                <p class="mensagem-erro"></p>
+            </div>
+        </form>
+    </section>
+    <!--/Cadastre-se!-->
+
+    <!--Footer-->
+    <footer class="footer-container">
+        <p class="footer-texto">2023 © Desenvolvido por Alura | Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <!--/Footer-->
+
+    <!--Modal-->
+    <div class="hide fade"></div>
+    <div class="modal-container modal hide">
+    
+        <!--Header do Modal-->
+        <div class="modal-header">
+            <i class="fa-regular fa-circle-check modal-icone"></i>
+            <p class="modal-header__text">Confira detalhes sobre o produto</p>
+            <button type="button" class="btn-fechar closeModal">X</button>
+        </div>
+        <!--/Header do Modal-->
+    
+        <!--Body do Modal-->
+        <div class="modal-body">
+
+            <!--IMG-->
+            <div class="modal-body__imagem">
+                <img src="./assets/img/Desktop/Imagens Cards/Jaqueta.png" alt="">
+            </div>
+
+            <!--Produto-->
+            <div class="modal-body__produto">
+                <h3 class="modal-produto__titulo">Jaqueta Jeans</h3>
+                <p class="modal-produto__descricao">Modelo unissex oversized com gola de camurça. Atemporal e autêntica!
+                </p>
+                <hr class="linha">
+                <p class="modal-produto__preco">R$ 150,00</p>
+                <p class="modal-produto__vendido">Vendido e entregue por Riachuelo</p>
+                <hr class="linha">
+
+                <!--Checkbox das cores e tamanhos-->
+                <div class="modal-produto__escolha"><!--Cores-->
+                    <h3 class="modal-produto__escolha-titulo">Cores:</h3>
+                    <div class="modal-produto__escolha-container">
+                        <div class="modal-produto__escolha-container__escolha">
+                            <input type="checkbox" name="Azul claro" id="Azul claro">
+                            <label for="Azul claro">Azul claro</label>
+                        </div>
+                        <div class="modal-produto__escolha-container__escolha">
+                            <input type="checkbox" name="Offwhite" id="Offwhite">
+                            <label for="Offwhite">Offwhite</label>
+                        </div>
+                        <div class="modal-produto__escolha-container__escolha">
+                            <input type="checkbox" name="Preto" id="Preto">
+                            <label for="Preto">Preto</label>
+                        </div>
+                    </div>
+                </div><!--/Cores-->
+
+                <hr class="linha">
+
+                <div class="modal-produto__escolha"><!--Tamanhos-->
+                    <h3 class="modal-produto__escolha-titulo">Tamanhos:</h3>
+                    <form action="">
+                        <fieldset class="modal-produto__escolha-container">
+                            <div class="modal-produto__escolha-container__escolha">
+                                <input type="checkbox" name="P" value="P" id="P">
+                                <label for="P">P</label>
+                            </div>
+
+                            <div class="modal-produto__escolha-container__escolha">
+                                <input type="checkbox" name="PP" value="PP" id="PP">
+                                <label for="PP">PP</label>
+                            </div>
+
+                            <div class="modal-produto__escolha-container__escolha">
+                                <input type="checkbox" name="M" value="M" id="M">
+                                <label for="M">M</label>
+                            </div>
+
+                            <div class="modal-produto__escolha-container__escolha">
+                                <input type="checkbox" name="G" value="G" id="G">
+                                <label for="G">G</label>
+                            </div>
+
+                            <div class="modal-produto__escolha-container__escolha">
+                                <input type="checkbox" name="GG" value="GG" id="GG">
+                                <label for="GG">GG</label>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div><!--/Tamanhos-->
+                <!--/Checkbox das cores e tamanhos-->
+
+                <button type="submit" class="btn-enviar">Adicionar a sacola</button><!--Botão enviar-->
+
+            </div>
+            <!--/Produto-->
+
+        </div>
+        <!--/Body do Modal-->
+    
+    </div>
+    <!--Modal-->
+
+   <!--Modal newsletter-->
+   <div class="modalNews hide">
+
+        <!--Header do Modal-->
+        <div class="modal-header">
+            <i class="fa-regular fa-circle-check modal-icone"></i>
+            <p class="modal-header__text">E-mail cadastrado com sucesso</p>
+            <button type="button" class="btn-fechar closeModalNews">X</button>
+        </div>
+        <!--/Header do Modal-->
+
+        <!--Body do Modal-->
+        <div>
+            <p>Em breve você receberá novidades exclusivas da Meteora.</p>
+        </div>
+        <!--/Body do Modal-->
+
+    </div>
+    <!--/Modal newsletter-->
+
+    <!--Scripts-->
+    <script type="module" src="./assets/js/script.js"></script>
+    <script src="./assets/js/carrousel.js"></script>
+    <script type="module" src="./assets/js/imprimirLista.js"></script>
+    <script type="module" src="./assets/js/buscaCategorias.js"></script>
+    <script type="module" src="./assets/js/buscaBarraPesquisa.js"></script>
+    <script type="module" src="./assets/js/modal.js"></script>
+</body>
+
+</html>
