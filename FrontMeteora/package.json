@@ -1,0 +1,29 @@
+{
+  "name": "new-meteora",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "react": "18.2.0",
+    "react-content-loader": "6.2.1",
+    "react-dom": "18.2.0",
+    "react-icons": "4.12.0",
+    "react-router-dom": "6.20.1",
+    "swiper": "11.0.5"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "5.17.0",
+    "@testing-library/react": "13.4.0",
+    "@testing-library/user-event": "13.5.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "jsdom": "30.1.3",
+    "vite": "8.3.4",
+    "vitest": "5.0.5"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest"
+  }
+}

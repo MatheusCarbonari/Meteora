@@ -1,0 +1,10 @@
+.footerContainer {
+    background-color: var(--paleta-primaria-preto);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footerText {
+    font-size: .6rem;
+    color: var(--cor-branca);
+}

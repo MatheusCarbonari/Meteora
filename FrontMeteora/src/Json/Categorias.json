@@ -1,0 +1,32 @@
+[
+    {
+        "id": "bolsas",
+        "category": "Bolsa",
+        "src": "CategoriaBolsa.png"
+    },
+    {
+        "id": "calcas",
+        "category": "Calça",
+        "src": "Categoria calça.png"
+    },
+    {
+        "id": "calcados",
+        "category": "Calçados",
+        "src": "Categoria Calçados.png"
+    },
+    {
+        "id": "camisetas",
+        "category": "Camiseta",
+        "src": "Categoria camiseta.png"
+    },
+    {
+        "id": "casacos",
+        "category": "Casacos",
+        "src": "Categoria casacos.png"
+    },
+    {
+        "id": "oculos",
+        "category": "Óculos",
+        "src": "CategoriaOculos.png"
+    }
+]

@@ -1,0 +1,17 @@
+node_modules/
+
+# Variáveis de ambiente locais
+.env
+.env.*
+!.env.example
+
+# Logs, cobertura e arquivos temporários
+*.log
+npm-debug.log*
+coverage/
+tmp/
+temp/
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db

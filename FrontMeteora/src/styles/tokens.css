@@ -1,0 +1,54 @@
+:root {
+  /* Paleta Meteora 2.0 */
+  --color-black: #161616;
+  --color-off-white: #F6F5F1;
+  --color-lime: #D9FF00;
+  --color-purple: #8254AD;
+
+  /* Papéis semânticos para as próximas etapas visuais */
+  --color-background: var(--color-off-white);
+  --color-surface-dark: var(--color-black);
+  --color-text: var(--color-black);
+  --color-text-on-dark: var(--color-off-white);
+  --color-accent: var(--color-lime);
+  --color-accent-secondary: var(--color-purple);
+
+  /* Fontes locais/do sistema; fontes web não são obrigatórias. */
+  --font-family-body: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-family-display: "Space Grotesk", Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+  --line-height-heading: 1.15;
+
+  /* Escala de espaçamento baseada em 4px. */
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --content-max-width: 75rem;
+
+  /*
+   * Referências de breakpoint (não funcionam diretamente em @media):
+   * small: 36rem | medium: 48rem | large: 64rem | wide: 75rem.
+   */
+  --breakpoint-small: 36rem;
+  --breakpoint-medium: 48rem;
+  --breakpoint-large: 64rem;
+  --breakpoint-wide: 75rem;
+
+  /* Tokens legados mantidos para preservar a interface atual. */
+  --paleta-primaria-preto: #000000;
+  --paleta-primaria-cinza: #CCCCCC;
+  --paleta-primaria-amarelo: #DAFF01;
+  --paleta-primaria-roxo: #9353FF;
+  --paleta-complementar-vermelho: #EE6471;
+  --paleta-complementar-laranja: #F87F46;
+  --cor-branca: #FFFFFF;
+  --font-inter: 'Poppins', sans-serif;
+}

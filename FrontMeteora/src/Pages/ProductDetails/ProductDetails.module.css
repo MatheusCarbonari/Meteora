@@ -1,0 +1,183 @@
+.productPage,
+.notFound {
+    width: min(100%, var(--content-max-width));
+    min-width: 0;
+    margin: 0 auto;
+    padding: var(--space-8) var(--space-4) var(--space-12);
+}
+
+.backLink,
+.actionLink {
+    display: inline-block;
+    color: var(--color-text);
+    font-weight: 600;
+    text-underline-offset: var(--space-1);
+}
+
+.backLink {
+    margin-bottom: var(--space-6);
+}
+
+.backLink:focus-visible,
+.actionLink:focus-visible {
+    outline: 3px solid var(--color-accent-secondary);
+    outline-offset: var(--space-1);
+}
+
+.details {
+    display: grid;
+    min-width: 0;
+    overflow: hidden;
+    background-color: var(--color-surface-dark);
+    border: 1px solid var(--color-surface-dark);
+}
+
+.imageFrame {
+    min-width: 0;
+    background-color: var(--color-accent);
+    border-bottom: var(--space-1) solid var(--color-accent);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 350 / 422;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    padding: var(--space-8) var(--space-6);
+    color: var(--color-text-on-dark);
+}
+
+.category,
+.title,
+.description,
+.price,
+.notFound h1,
+.notFound p {
+    margin: 0;
+}
+
+.category,
+.eyebrow {
+    font-family: var(--font-family-display);
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.category {
+    align-self: flex-start;
+    padding: var(--space-2) var(--space-3);
+    color: var(--color-text-on-dark);
+    background-color: var(--color-accent-secondary);
+}
+
+.title {
+    margin-top: var(--space-6);
+    font-family: var(--font-family-display);
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    line-height: var(--line-height-heading);
+}
+
+.description {
+    max-width: 38rem;
+    margin-top: var(--space-6);
+    font-size: 1.0625rem;
+    line-height: var(--line-height-base);
+}
+
+.price {
+    margin-top: var(--space-8);
+    color: var(--color-accent);
+    font-family: var(--font-family-display);
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.addButton {
+    align-self: flex-start;
+    min-height: 2.75rem;
+    margin-top: var(--space-6);
+    padding: var(--space-3) var(--space-6);
+    color: var(--color-black);
+    background-color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.addButton:hover {
+    color: var(--color-text-on-dark);
+    background-color: transparent;
+}
+
+.addButton:focus-visible {
+    outline: 3px solid var(--color-accent-secondary);
+    outline-offset: 3px;
+}
+
+.confirmation {
+    min-height: 1.5rem;
+    margin-top: var(--space-3);
+    color: var(--color-text-on-dark);
+    font-size: 0.875rem;
+}
+
+.notFound {
+    display: grid;
+    justify-items: start;
+    gap: var(--space-4);
+    min-height: 24rem;
+    align-content: center;
+}
+
+.notFound h1 {
+    font-family: var(--font-family-display);
+    font-size: clamp(2rem, 7vw, 3.5rem);
+    line-height: var(--line-height-heading);
+}
+
+.eyebrow {
+    color: var(--color-accent-secondary);
+}
+
+.actionLink {
+    margin-top: var(--space-2);
+    padding: var(--space-3) var(--space-4);
+    color: var(--color-black);
+    background-color: var(--color-accent);
+}
+
+/* Breakpoint medium documentado em tokens.css. */
+@media (min-width: 48rem) {
+    .productPage,
+    .notFound {
+        padding: var(--space-12) var(--space-6) var(--space-16);
+    }
+
+    .details {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    .imageFrame {
+        border-right: var(--space-1) solid var(--color-accent);
+        border-bottom: 0;
+    }
+
+    .image {
+        height: 100%;
+    }
+
+    .content {
+        padding: var(--space-12);
+    }
+}
