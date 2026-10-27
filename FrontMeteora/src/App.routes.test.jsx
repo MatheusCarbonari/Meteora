@@ -37,7 +37,7 @@ test('navega da Home para o catálogo e retorna à Home pelo Header', () => {
     ).toBeInTheDocument();
 });
 
-test('renderiza diretamente o catálogo com os seis produtos', () => {
+test('renderiza diretamente o catálogo com todos os produtos', () => {
     renderAt('/catalogo');
 
     const main = screen.getByRole('main');
@@ -46,7 +46,8 @@ test('renderiza diretamente o catálogo com os seis produtos', () => {
     expect(
         within(main).getByText(
             (_, element) =>
-                element.tagName === 'P' && element.textContent === '6 produtos disponíveis'
+                element.tagName === 'P' &&
+                element.textContent === `${products.length} produtos disponíveis`
         )
     ).toBeInTheDocument();
     expect(within(main).getAllByRole('article')).toHaveLength(products.length);

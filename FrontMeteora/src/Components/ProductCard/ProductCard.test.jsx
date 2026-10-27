@@ -21,6 +21,10 @@ test('apresenta os dados e o preço formatado do produto', () => {
         'src',
         product.image
     );
+    expect(screen.getByRole('img', { name: product.imageAlt })).toHaveAttribute(
+        'loading',
+        'lazy'
+    );
     expect(
         screen.getByRole('link', { name: `Ver detalhes de ${product.name}` })
     ).toHaveAttribute('href', `/produto/${product.slug}`);

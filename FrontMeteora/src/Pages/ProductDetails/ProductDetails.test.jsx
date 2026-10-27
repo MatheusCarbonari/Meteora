@@ -41,6 +41,10 @@ describe('ProductDetails', () => {
             'src',
             product.image
         );
+        expect(screen.getByRole('img', { name: product.imageAlt })).toHaveAttribute(
+            'loading',
+            'eager'
+        );
         expect(screen.getByRole('link', { name: /voltar ao catálogo/i })).toHaveAttribute(
             'href',
             '/catalogo'

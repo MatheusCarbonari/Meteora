@@ -16,6 +16,7 @@ const ProductCard = ({ product, compactOnMobile = false }) => {
                     className={style.image}
                     src={product.image}
                     alt={product.imageAlt}
+                    loading="lazy"
                 />
 
                 <div className={style.content}>

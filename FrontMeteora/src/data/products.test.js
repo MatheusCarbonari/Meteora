@@ -14,8 +14,8 @@ const requiredFields = [
 ];
 
 describe('catálogo local de produtos', () => {
-    test('possui seis produtos com todos os campos obrigatórios', () => {
-        expect(products).toHaveLength(6);
+    test('possui produtos com todos os campos obrigatórios', () => {
+        expect(products.length).toBeGreaterThanOrEqual(categories.length);
 
         products.forEach((product) => {
             requiredFields.forEach((field) => {
@@ -25,12 +25,14 @@ describe('catálogo local de produtos', () => {
         });
     });
 
-    test('mantém IDs e slugs únicos e adequados para rotas', () => {
+    test('mantém IDs, slugs e nomes únicos e adequados para rotas', () => {
         const ids = products.map(({ id }) => id);
         const slugs = products.map(({ slug }) => slug);
+        const names = products.map(({ name }) => name);
 
         expect(new Set(ids).size).toBe(ids.length);
         expect(new Set(slugs).size).toBe(slugs.length);
+        expect(new Set(names).size).toBe(names.length);
         slugs.forEach((slug) => {
             expect(slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
         });
@@ -48,7 +50,7 @@ describe('catálogo local de produtos', () => {
 
         expect(new Set(images).size).toBe(products.length);
         images.forEach((image) => {
-            expect(image).toMatch(/\.png(?:\?.*)?$/i);
+            expect(image).toMatch(/\.webp(?:\?.*)?$/i);
         });
     });
 
@@ -58,5 +60,20 @@ describe('catálogo local de produtos', () => {
 
         expect(new Set(categoryIds).size).toBe(categories.length);
         expect(new Set(productCategoryIds)).toEqual(new Set(categoryIds));
+    });
+
+    test('mantém no catálogo os produtos recuperados das fotografias originais', () => {
+        expect(products).toEqual(
+            expect.arrayContaining([
+                expect.objectContaining({
+                    slug: 'calca-reta-rose',
+                    category: 'calcas',
+                }),
+                expect.objectContaining({
+                    slug: 'tenis-runner-cinza',
+                    category: 'calcados',
+                }),
+            ])
+        );
     });
 });

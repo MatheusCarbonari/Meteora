@@ -65,22 +65,24 @@ test('usa a grade tradicional quando uma ordenação está ativa', () => {
 
 test('restaura pesquisa, categoria e ordenação a partir da URL', () => {
     renderCatalog('/catalogo?q=OCULOS&categoria=oculos&ordem=maior-preco');
+    const glasses = products.filter(({ category }) => category === 'oculos');
 
     expect(screen.getByRole('searchbox', { name: 'Pesquisar' })).toHaveValue('OCULOS');
     expect(screen.getByRole('combobox', { name: 'Categoria' })).toHaveValue('oculos');
     expect(screen.getByRole('combobox', { name: 'Ordenar por' })).toHaveValue(
         'maior-preco'
     );
-    expect(screen.getAllByRole('article')).toHaveLength(1);
+    expect(screen.getAllByRole('article')).toHaveLength(glasses.length);
     expect(
         screen.getByText(
             (_, element) =>
-                element.tagName === 'P' && element.textContent === '1 produto disponível'
+                element.tagName === 'P' &&
+                element.textContent === `${glasses.length} produtos disponíveis`
         )
     ).toBeInTheDocument();
-    expect(
-        screen.getByRole('heading', { name: 'Óculos Redondo Clássico' })
-    ).toBeInTheDocument();
+    glasses.forEach(({ name }) => {
+        expect(screen.getByRole('heading', { name })).toBeInTheDocument();
+    });
 });
 
 test('sincroniza filtros combinados com os parâmetros da URL', () => {

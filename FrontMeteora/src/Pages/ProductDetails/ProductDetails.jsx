@@ -52,6 +52,8 @@ const ProductDetails = () => {
                         className={style.image}
                         src={product.image}
                         alt={product.imageAlt}
+                        loading="eager"
+                        fetchPriority="high"
                     />
                 </div>
 

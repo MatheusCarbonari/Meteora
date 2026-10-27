@@ -36,7 +36,7 @@ test('renderiza o conteúdo principal da Home', () => {
     })
   ).toHaveAttribute('tabindex', '0');
   expect(within(main).getByText(/deslize para ver mais/i)).toBeInTheDocument();
-  expect(within(main).getAllByRole('article')).toHaveLength(6);
+  expect(within(main).getAllByRole('article')).toHaveLength(products.length);
 
   products.forEach(({ name, imageAlt, slug }) => {
     expect(within(main).getByRole('heading', { name })).toBeInTheDocument();

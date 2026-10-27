@@ -4,12 +4,10 @@ import { getCatalogResults } from './catalogFilters';
 
 describe('filtros do catálogo', () => {
     test('pesquisa nome e descrição ignorando caixa e acentos', () => {
-        expect(getCatalogResults(products, { query: 'OCULOS' })).toEqual([
-            expect.objectContaining({ slug: 'oculos-redondo-classico' }),
-        ]);
-        expect(getCatalogResults(products, { query: 'Óculos' })).toEqual([
-            expect.objectContaining({ slug: 'oculos-redondo-classico' }),
-        ]);
+        const glasses = products.filter(({ category }) => category === 'oculos');
+
+        expect(getCatalogResults(products, { query: 'OCULOS' })).toEqual(glasses);
+        expect(getCatalogResults(products, { query: 'Óculos' })).toEqual(glasses);
         expect(getCatalogResults(products, { query: 'composicoes' })).toEqual([
             expect.objectContaining({ slug: 'camiseta-essential-mostarda' }),
         ]);
