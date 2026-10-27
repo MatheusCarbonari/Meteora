@@ -1,5 +1,7 @@
 # Dependências
 **/node_modules/
+**/.pnp
+**/.pnp.js
 
 # Variáveis de ambiente locais
 **/.env
