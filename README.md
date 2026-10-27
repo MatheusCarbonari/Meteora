@@ -54,6 +54,14 @@ Inter é usada para textos e Space Grotesk para destaques, com fontes do sistema
 como fallback. As combinações principais de contraste são off-white sobre
 preto, preto sobre off-white e preto sobre verde-lima.
 
+### Imagens do catálogo
+
+O catálogo utiliza arquivos WebP em `src/Assets/img/CardsCatalogo/`. As imagens
+maiores foram redimensionadas proporcionalmente para até 1000 px de largura e
+convertidas com qualidade 84%; imagens menores mantêm suas dimensões originais.
+Os arquivos PNG permanecem no mesmo diretório como fonte para comparação e
+recuperação.
+
 ### Persistência do carrinho
 
 O carrinho usa a chave versionada `meteora-cart-v1` no `localStorage` e salva
